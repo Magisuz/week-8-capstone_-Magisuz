@@ -34,6 +34,32 @@ You will:
 
 The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
 
+## Deployment
+
+This project is configured for deployment on Render with MongoDB Atlas as the database.
+
+### Quick Deploy to Render
+
+1. **Set up MongoDB Atlas** (see [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions)
+2. **Deploy Backend**:
+   - Create a new Web Service on Render
+   - Set environment variable: `MONGODB_URI` (your MongoDB Atlas connection string)
+   - Build command: `npm install`
+   - Start command: `npm start`
+
+3. **Deploy Frontend**:
+   - Create a new Static Site on Render
+   - Root directory: `frontend`
+   - Build command: `npm install && npm run build`
+   - Publish directory: `dist`
+   - Set environment variable: `VITE_API_URL` (your backend URL + `/api`)
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
+**Live URLs:**
+- Backend: [Add your backend URL here]
+- Frontend: [Add your frontend URL here]
+
 ## Submission
 
 Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
